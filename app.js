@@ -1,10 +1,10 @@
 'use strict';
 
 const number = process.argv[2] || 0 ;
-let sum = 0 ; 
+let sum = 1 ; 
 
-for (let i = 1; i <= number; i++) {
-    sum = sum + i;
-  }
+for (let i = number ; i > 1 ; i--) {
+  sum = sum * i;
+}
   
-  console.log(sum);
+console.log(sum);
